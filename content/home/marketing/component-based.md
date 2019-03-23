@@ -1,8 +1,8 @@
 ---
-title: Component-Based
+title: ಕಾಂಪೊನೆಂಟ್ ಆಧಾರಿತ
 order: 1
 ---
 
-Build encapsulated components that manage their own state, then compose them to make complex UIs.
+ಸುತ್ತುವರೆಯಲ್ಪಟ್ಟಿರುವ ಕಾಂಪೊನೆಂಟ್ಗಳನ್ನು ತಯಾರಿಸಿ, ತಮ್ಮ ಸ್ಟೇಟನ್ನು ತಾವೇ ನಿರ್ವಹಿಸಿ, ನಂತರ UIಗಳನ್ನು ಸಂಕೀರ್ಣಗೊಳಿಸುವಂತೆ ರಚಿಸಬಹುದು.
 
-Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your app and keep state out of the DOM.
+ಕಾಂಪೊನೆಂಟಿನ ತರ್ಕವನ್ನು ಜಾವಾಸ್ಕ್ರಿಪ್ಟಿನಲ್ಲಿ ಬರೆದಿರುವುದರಿಂದ ಟೆಂಪ್ಲೇಟ್ಸ್  ಬದಲಾಗಿ ನೀವು ಸುಲಭವಾಗಿ ರಿಚ್ ಡಾಟಾವನ್ನು ನಿಮ್ಮ ಆಪ್ಪ್ಗಳ ಮೂಲಕ ಸ್ಟೇಟನ್ನು DOMನಿಂದ ದೂರವಿಡಬಹುದು

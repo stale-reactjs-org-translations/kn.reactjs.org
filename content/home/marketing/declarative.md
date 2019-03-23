@@ -1,8 +1,8 @@
 ---
-title: Declarative
+title: ಘೋಷಣಾತ್ಮಕ
 order: 0
 ---
 
-React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+ರಿಯಾಕ್ಟ್ ಸಂವಾದಾತ್ಮಕ UIಗಳನ್ನು ರಚಿಸಲು ನೋವುರಹಿತವಾಗಿರುತ್ತದೆ. ನಿಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ನಲ್ಲಿ ಪ್ರತಿ ಸ್ಟಾಟಿಗಾಗಿ ಸರಳವಾಗಿರುವ ನೋಟಗಳನ್ನು ವಿನ್ಯಾಸ ಮಾಡಿದರೆ, ಡೇಟಾ ಬದಲಾದಾಗ ರಿಯಾಕ್ಟ್ ಅಗತ್ಯವಾಗಿರುವ ಕಾಂಪೊನೆಂಟ್ಗಳನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಅಪ್ಡೇಟ್ ಮತ್ತೆ ರೆಂಡರ್ ಮಾಡುತದೆ.
 
-Declarative views make your code more predictable and easier to debug.
+ಘೋಷಣಾತ್ಮಕ ವೀಕ್ಷಣೆಗಳು ನಿಮ್ಮ ಕೋಡನ್ನು ಹೆಚ್ಚು ಊಹಿಸಬಹುದಾದವು ಮತ್ತು ಡಿಬಗ್ ಮಾಡಲು ಸುಲಭವಾಗಿಸುತ್ತದೆ.
