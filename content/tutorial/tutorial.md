@@ -12,20 +12,23 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
-ಈ ಟ್ಯುಟೋರಿಯಲ್ ಯಾವುದೇ ರಿಯಾಕ್ಟ್ ಪ್ರತಿಕ್ರಿಯಾ ಜ್ಞಾನವನ್ನು ತೆಗೆದುಕೊಳ್ಳುವುದಿಲ್ಲ
+
+ಊಹೆ: ನಿಮಗೆ ರಿಯಾಕ್ಟ್ ಬಗ್ಗೆ ಮೊದಲಿನ ಜ್ಞಾನ ಅಗತ್ಯವಿಲ್ಲ.
   
-## Before We Start the Tutorial {#before-we-start-the-tutorial}
+## ನಾವು ಟ್ಯುಟೋರಿಯಲ್ ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು {#before-we-start-the-tutorial}
 
-We will build a small game during this tutorial. **You might be tempted to skip it because you're not building games -- but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building any React apps, and mastering it will give you a deep understanding of React.
 
->Tip
+ಈ ಟ್ಯುಟೋರಿಯಲ್ ಸಮಯದಲ್ಲಿ ನಾವು ಒಂದು ಸಣ್ಣ ಆಟವನ್ನು ನಿರ್ಮಿಸುತ್ತೇವೆ. **ನೀವು ಆಟಗಳನ್ನು ನಿರ್ಮಿಸುತ್ತಿಲ್ಲವಾದ್ದರಿಂದ, ನೀವು ಅದನ್ನು ಬಿಟ್ಟುಬಿಡಲು ಬಯಸಬಹುದು -- ಆದರೆ ಇದಕ್ಕೆ ಒಂದು ಅವಕಾಶ ನೀಡಿ.** ನೀವು ಈ ಟ್ಯುಟೋರಿಯಲ್ನಿಂದ ಕಲಿಯುವ ತಂತ್ರಗಳು ಯಾವುದೇ ರಿಯಾಕ್ಟ್ ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಮಿಸಲು ನಿಮಗೆ ಬಲವಾದ ಮೂಲಭೂತ  ತಿಳುವಳಿಕೆ ನೀಡುತ್ತದೆ.
+
+>ಸಲಹೆ
 >
 >This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
 
-The tutorial is divided into several sections:
+ಟ್ಯುಟೋರಿಯಲ್ ಹಲವಾರು ಭಾಗಗಳಾಗಿ ವಿಂಗಡಿಸಲಾಗಿದೆ:
 
-* [Setup for the Tutorial](#setup-for-the-tutorial) will give you **a starting point** to follow the tutorial.
-* [Overview](#overview) will teach you **the fundamentals** of React: components, props, and state.
+
+* [ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್](#setup-for-the-tutorial) ಟ್ಯುಟೋರಿಯಲ್ ಅನ್ನು ಅನುಸರಿಸಲು **ಪ್ರಾರಂಭದ ಬಿಂದುವನ್ನು** ನಿಮಗೆ ನೀಡುತ್ತದೆ.
+* [ಅವಲೋಕನ](#overview) will teach you **the fundamentals** of React: components, props, and state.
 * [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
 * [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
 
