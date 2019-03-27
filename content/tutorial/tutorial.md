@@ -22,21 +22,23 @@ redirect_from:
 
 >ಸಲಹೆ
 >
->This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
+> ಈ ಟ್ಯುಟೋರಿಯಲ್  **ಮಾಡುವ ಮೂಲಕ ಕಲಿಯುವವರಿಗೆ**. ನೀವು ಬೇಸಿಕ್ಸ್ಗಳಿಂದ ಕಲಿಯಲು ಬಯಸಿದರೆ, ನೀವು [ಸ್ಟೆಪ್ ಬೈ ಸ್ಟೆಪ್ ಗೈಡ್](/docs/hello-world.html) ನೋಡಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ಮತ್ತು ಗೈಡ್ ಪೂರಕವನ್ನು ನೀವು ಕಾಣಬಹುದು.
+
 
 ಟ್ಯುಟೋರಿಯಲ್ ಹಲವಾರು ಭಾಗಗಳಾಗಿ ವಿಂಗಡಿಸಲಾಗಿದೆ:
 
 
 * [ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್](#setup-for-the-tutorial) ಟ್ಯುಟೋರಿಯಲ್ ಅನ್ನು ಅನುಸರಿಸಲು **ಪ್ರಾರಂಭದ ಬಿಂದುವನ್ನು** ನಿಮಗೆ ನೀಡುತ್ತದೆ.
-* [ಅವಲೋಕನ](#overview) will teach you **the fundamentals** of React: components, props, and state.
-* [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
-* [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
+* [ಅವಲೋಕನ (ಓವರ್ವ್ಯೂ)](#overview) ನಿಮಗೆ ರಿಯಾಕ್ಟ್ **ಮೂಲಭೂತ** ಶಿಕ್ಷಣವನ್ನು ನೀಡುತ್ತದೆ:  ಕಾಂಪೊನೆಂಟ್ಸ್, ಪ್ರಾಪ್ಸ್, ಮತ್ತು  ಸ್ಟೇಟ್.
+* [ನೀವು ಆಟ ಮುಗಿಸಿದರೆ](#completing-the-game), "ರಿಯಾಕ್ಟ್"ಲ್ಲಿರುವ ಎಲ್ಲಾ ತಂತ್ರಗಳು ಕಲಿಯುವಿರಿ
+* [ಸಮಯ ಪ್ರಯಾಣವನ್ನು ಸೇರಿಸುವುದು](#adding-time-travel) (ಇದು ಕೊನೆಯ ಅಭ್ಯಾಸ),  ನಿಮಗೆ "ರಿಯಾಕ್ಟ್"ಲ್ಲಿರುವ ಅನನ್ಯ ಸಾಮರ್ಥ್ಯದ **ಆಳವಾದ ಒಳನೋಟ(ಇನ್ಸೈಟ್)** ಸಸಿಗುತ್ತದೆ.
 
-You don't have to complete all of the sections at once to get the value out of this tutorial. Try to get as far as you can -- even if it's one or two sections.
 
-### What Are We Building? {#what-are-we-building}
+ಈ ಟ್ಯುಟೋರಿಯಲ್ನ ಮೌಲ್ಯವನ್ನು ಪಡೆಯಲು ನೀವು ಎಲ್ಲಾ ವಿಭಾಗಗಳನ್ನು ಏಕಕಾಲದಲ್ಲಿ ಪೂರ್ಣಗೊಳಿಸಬೇಕಾಗಿಲ್ಲ. ನೀವು ಸಾಧ್ಯವಾದಷ್ಟು ಪ್ರಯತ್ನಿಸಿ -- ಒಂದು ಅಥವಾ ಎರಡು ವಿಭಾಗಗಳಿದ್ದರೂ ಸಹ, ನೀವು ಅದರ ಉಪಯೋಗ ಕಾಣುತ್ತೀರಿ.
 
-In this tutorial, we'll show how to build an interactive tic-tac-toe game with React.
+### ನಾವು ಏನು ನಿರ್ಮಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇವೆ? {#what-are-we-building}
+
+ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ನಿಮಗೆ ರಿಯಾಕ್ಟ್ ಮೂಲಕ "ಟಿಕ್-ಟಾಕ್-ಟೊ" ಆಟ ಹೇಗೆ ಮಾಡುವುದೆ೦ದು ತೋರಿಸುತ್ತೇವೆ.
 
 You can see what we'll be building here: **[Final Result](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. If the code doesn't make sense to you, or if you are unfamiliar with the code's syntax, don't worry! The goal of this tutorial is to help you understand React and its syntax.
 
