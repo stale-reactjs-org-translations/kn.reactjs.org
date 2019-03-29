@@ -54,7 +54,7 @@ redirect_from:
 
 ಎಚ್ಟಿಎಮ್ಎಲ್(HTML) ಮತ್ತು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್(JavaScript) ಗೆ ನಿಮಗೆ ಪರಿಚಯವಿದೆ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ, ಆದರೆ ನೀವು ಬೇರೊಂದು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆಯಿಂದ ಬಂದರೂ ಸಹ ನೀವು ಅನುಸರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ನೀವು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಪರಿಕಲ್ಪನೆಗಳಾದ ಫುನ್ಕ್ಷನ್ಸ್(Functions), ಒಬ್ಜೆಕ್ಟ್ಸ್(Objects), ಅರ್ರಯ್ಸ್(Arrays) ಮತ್ತು ಸ್ವಲ್ಪ ಮಟ್ಟಿಗೆ  ಕ್ಲಾಸೆಸ್(Classes) ತಿಳಿದಿರುವಿರಿ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ.
 
-ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾದರೆ, ನಾವು ಇದನ್ನು ಓದಲು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ [ಈ ಗೈಡ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). ನಾವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ES6 ನಿಂದ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸುತ್ತಿದ್ದೇವೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ಬಳಸುತ್ತಿದ್ದೇವೆ [ಆರೋ ಫುನ್ಕ್ಷನ್ಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [ಕ್ಲಾಸೆಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`ಲೆಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`ಕಾಂಸ್ಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [ಬಾಬೆಲ್ ರೆಪ್ಲ್](babel://es5-syntax-example) to check what ES6 code compiles to.
+ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾದರೆ, ನಾವು ಇದನ್ನು ಓದಲು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ [ಈ ಗೈಡ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). ನಾವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ES6 ನಿಂದ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸುತ್ತಿದ್ದೇವೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ಬಳಸುತ್ತಿದ್ದೇವೆ [ಆರೋ ಫುನ್ಕ್ಷನ್ಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [ಕ್ಲಾಸೆಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`ಲೆಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), ಮತ್ತು [`ಕಾಂಸ್ಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) ಸ್ಟೇಟಮೆಂಟ್ಸ್. ನೀವು [ಬಾಬೆಲ್ ರೆಪ್ಲ್](babel://es5-syntax-example) ಬಳಿಸಿ ಯಾವ ES6 ಕೋಡ್ ಜೊತೆ ಕಂಪೈಲ್ ಹಾಗುವುದೆಂದು ನೋಡಬಹುದು.
 
 ## ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್ {#setup-for-the-tutorial}
 
@@ -109,11 +109,11 @@ del *
 cd ..
 ```
 
-4. Add a file named `index.css` in the `src/` folder with [this CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100).
+4. `index.css` ಎ೦ಬ ಫೈಲ್ ಮಾಡಿ [ಈ ಸಿಎಸ್ಎಸ್ ಕೋಡ್](https://codepen.io/gaearon/pen/oWWQNa?editors=0100) ನಕಲು ಅಂಟಿಸಿ `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿ ಇಟ್ಟುಕೊಳ್ಳಿ.
 
-5. Add a file named `index.js` in the `src/` folder with [this JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
+5. `index.js` ಎ೦ಬ ಫೈಲ್ ಮಾಡಿ [ಈ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಕೋಡ್](https://codepen.io/gaearon/pen/oWWQNa?editors=0100) ನಕಲು ಅಂಟಿಸಿ `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿ ಇಟ್ಟುಕೊಳ್ಳಿ.
 
-6. Add these three lines to the top of `index.js` in the `src/` folder:
+6. `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿರುವ `index.js` ಫೈಲಿನಲ್ಲಿ ಈ ಮೂರು ಸಾಲುಗಳನ್ನು ೇಲ್ಭಾಗಕ್ಕೆ ಸೇರಿಸಿ.
 
 ```js
 import React from 'react';
@@ -121,15 +121,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 ```
 
-Now if you run `npm start` in the project folder and open `http://localhost:3000` in the browser, you should see an empty tic-tac-toe field.
-
-We recommend following [these instructions](https://babeljs.io/docs/editors/) to configure syntax highlighting for your editor.
+ಈಗ ನೀವು ಪ್ರಾಜೆಕ್ಟ್ ಫೋಲ್ಡೆರ್ನಲ್ಲಿದು, `npm start`ಕಮಾಂಡ್ ಕೊಟ್ಟಾದಮೇಲೆ, ನಿಮ್ಮ ಬ್ರೌಸರ್ನಲ್ಲಿ `http://localhost:3000` ಎಂದು ಟೈಪ್ ಮಾಡಿಧರೆ, ನೀವು "ಟಿಕ್-ಟಾಕ್-ಟೋ" ಆಟದ ಖಾಲಿ ಬೋರ್ಡ್ ನೋಡುತ್ತೀರಿ.
+ 
+[ಈ ಸೂಚನೆಗಳನ್ನು] (https://babeljs.io/docs/editors/) ಅನುಸರಿಸಿಸಲು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. ಇದರೊಂದಿಗೆ ನಿಮ್ಮ ಎಡಿಟರ್ ಸಿಂಟ್ಯಾಕ್ಸ್ ಹೈಲೈಟ್ ಅನ್ನು ಸಂರಚಿಸಲು (ಕಾನ್ಫಿಗರ್) ಆಗುವುದು.
 
 </details>
 
-### Help, I'm Stuck! {#help-im-stuck}
+### ಸಹಾಯ, ನಾನು ಮುಂದುವರೆಯಲು ಸಾಧ್ಯವಾಗುತಿಲ್ಲ! {#help-im-stuck}
 
-If you get stuck, check out the [community support resources](/community/support.html). In particular, [Reactiflux Chat](https://discord.gg/0ZcbPKXt5bZjGY5n) is a great way to get help quickly. If you don't receive an answer, or if you remain stuck, please file an issue, and we'll help you out.
+ನಿಮಗೆ ಮುಂದೂಡಲು ಸಾಧ್ಯವಾಗುತಿಲ್ಲವೆಂದರೆ, [ಕಮ್ಯೂನಿಟಿ ಸಪೋರ್ಟ್ ರಿಸೋರ್ಸಸ್](/community/support.html) ನಲ್ಲಿ ನಿಮಗೆ ಸಹಾಯ ಸಿಗುತ್ತದೆ. ನಿರ್ದಿಷ್ಟವಾಗಿ, [ರಿಯಾಕ್ಟ್ ಫ್ಲಕ್ಸ್ ಚಾಟ್](https://discord.gg/0ZcbPKXt5bZjGY5n) ನಲ್ಲಿ ನೀವು ಶೀಘ್ರ ಸಹಾಯ ಪಡೆಯುತ್ತೀರಿ. ನೀವು ಉತ್ತರವನ್ನು ಸಿಗದಿದ್ದರೆ, ಅಥವಾ ನಿಮಗೆ ಮುಂದೂಡಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ, ದಯವಿಟ್ಟು ಸಮಸ್ಯೆಯನ್ನು (ಇಶ್ಯೂ) ಫೈಲ್ ಮಾಡಿ, ಮತ್ತು ನಾವು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತೇವೆ.
 
 ## Overview {#overview}
 
