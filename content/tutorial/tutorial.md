@@ -50,60 +50,62 @@ redirect_from:
 
 ನಿಮಗೆ ತಿಳಿದಿರುವ ನಂತರ ನೀವು ಟಿಕ್-ಟಾಕ್-ಟೋ ಆಟವನ್ನು ಮುಚ್ಚಬಹುದು. ಈ ಟ್ಯುಟೋರಿಯಲ್ನಲ್ಲಿ ನಾವು ಸರಳ ಟೆಂಪ್ಲೆಟ್ನಿಂದ ಪ್ರಾರಂಭಿಸುತ್ತೇವೆ. ನಮ್ಮ ಮುಂದಿನ ಹಂತವು ನಿಮ್ಮನ್ನು ಸ್ಥಾಪಿಸುವ ಮೂಲಕ ನೀವು ಆಟವನ್ನು ನಿರ್ಮಿಸಲು ಪ್ರಾರಂಭಿಸಬಹುದು.
 
-### Prerequisites {#prerequisites}
+### ಪೂರ್ವಾಪೇಕ್ಷಿತಗಳು (ಪ್ರೇರೆಕ್ಕ್ಇಸಿಟಿಎಸ್) {#prerequisites}
 
-We'll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you're coming from a different programming language. We'll also assume that you're familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes.
+ಎಚ್ಟಿಎಮ್ಎಲ್(HTML) ಮತ್ತು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್(JavaScript) ಗೆ ನಿಮಗೆ ಪರಿಚಯವಿದೆ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ, ಆದರೆ ನೀವು ಬೇರೊಂದು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆಯಿಂದ ಬಂದರೂ ಸಹ ನೀವು ಅನುಸರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ನೀವು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಪರಿಕಲ್ಪನೆಗಳಾದ ಫುನ್ಕ್ಷನ್ಸ್(Functions), ಒಬ್ಜೆಕ್ಟ್ಸ್(Objects), ಅರ್ರಯ್ಸ್(Arrays) ಮತ್ತು ಸ್ವಲ್ಪ ಮಟ್ಟಿಗೆ  ಕ್ಲಾಸೆಸ್(Classes) ತಿಳಿದಿರುವಿರಿ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ.
 
-If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we're also using some features from ES6 -- a recent version of JavaScript. In this tutorial, we're using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [Babel REPL](babel://es5-syntax-example) to check what ES6 code compiles to.
+ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾದರೆ, ನಾವು ಇದನ್ನು ಓದಲು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ [ಈ ಗೈಡ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). ನಾವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ES6 ನಿಂದ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸುತ್ತಿದ್ದೇವೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ಬಳಸುತ್ತಿದ್ದೇವೆ [ಆರೋ ಫುನ್ಕ್ಷನ್ಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [ಕ್ಲಾಸೆಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`ಲೆಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`ಕಾಂಸ್ಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [ಬಾಬೆಲ್ ರೆಪ್ಲ್](babel://es5-syntax-example) to check what ES6 code compiles to.
 
-## Setup for the Tutorial {#setup-for-the-tutorial}
+## ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್ {#setup-for-the-tutorial}
 
-There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
+ಈ ಟ್ಯುಟೋರಿಯಲ್ ಪೂರ್ಣಗೊಳಿಸಲು ಎರಡು ಮಾರ್ಗಗಳಿವೆ: ನೀವು ನಿಮ್ಮ ಬ್ರೌಸರ್ನಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಬರೆಯಬಹುದು, ಅಥವಾ ನೀವು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ನಲ್ಲಿ ಲೋಕಲ್ ಡೆವಲಪ್ಮೆಂಟ್ ಸೆಟಪ್ ಮಾಡಬಹುದು
 
-### Setup Option 1: Write Code in the Browser {#setup-option-1-write-code-in-the-browser}
+### ಸೆಟಪ್ ಮಾರ್ಗ ಒಂದು: ಬ್ರೌಸರ್ನಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಬರೆಯಬಹುದು {#setup-option-1-write-code-in-the-browser}
 
-This is the quickest way to get started!
+ಪ್ರಾರಂಭಿಸಲು ಇದು ತ್ವರಿತ ಮಾರ್ಗ!
 
-First, open this **[Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** in a new tab. The new tab should display an empty tic-tac-toe game board and React code. We will be editing the React code in this tutorial.
+ಮೊದಲು, ಇದನ್ನು  ಹೊಸ ಟ್ಯಾಬ್ನಲ್ಲಿ ತೆರೆಯಿರಿ **[ಸ್ಟಾರ್ಟರ್ ಕೋಡ್](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)**. ಹೊಸ ಟ್ಯಾಬ್ ಖಾಲಿ "ಟಿಕ್-ಟಾಕ್-ಟೋ" ಗೇಮ್ ಬೋರ್ಡ್ ಮತ್ತು ರಿಯಾಕ್ಟ್ ಕೋಡ್ ಅನ್ನು ತೋರಿಸುತ್ತದೆ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ ನಾವು ರಿಯಾಕ್ಟ್ ಕೋಡ್ ಅನ್ನು ಸಂಪಾದಿಸುತ್ತೇವೆ (ಎಡಿಟ್ ಮಾಡುವುದು).
 
-You can now skip the second setup option, and go to the [Overview](#overview) section to get an overview of React.
+ನೀವು ಈಗ ಎರಡನೇ ಸೆಟಪ್ ಆಯ್ಕೆಯನ್ನು ಬಿಟ್ಟುಬಿಡಬಹುದು ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆಯ [ಅವಲೋಕನ (ಓವರ್ವ್ಯೂ)](#overview) ವಿಭಾಗಕ್ಕೆ ಹೋಗಬಹುದು.
 
-### Setup Option 2: Local Development Environment {#setup-option-2-local-development-environment}
+### ಸೆಟಪ್ ಮಾರ್ಗ ಎರಡು: ಲೋಕಲ್ ಡೆವಲಪ್ಮೆಂಟ್ ಎನ್ವಿರಾನ್ಮೆಂಟ್ {#setup-option-2-local-development-environment}
 
-This is completely optional and not required for this tutorial!
+ಈ ಟ್ಯುಟೋರಿಯಲ್ಗೆ ಇದು ಸಂಪೂರ್ಣವಾಗಿ ಐಚ್ಛಿಕವಾಗಿರುತ್ತದೆ ಮತ್ತು ಅಗತ್ಯವಿಲ್ಲ!
 
 <br>
 
 <details>
 
-<summary><b>Optional: Instructions for following along locally using your preferred text editor</b></summary>
+<summary><b>ಐಚ್ಛಿಕ: ನಿಮ್ಮ ಆದ್ಯತೆಯ ಲೋಕಲ್ ಟೆಕ್ಸ್ಟ್ ಎಡಿಟರ್ ಬಳೆಸುವುದಕೆ ಸೂಚನೆಗಳು</b></summary>
 
-This setup requires more work but allows you to complete the tutorial using an editor of your choice. Here are the steps to follow:
 
-1. Make sure you have a recent version of [Node.js](https://nodejs.org/en/) installed.
-2. Follow the [installation instructions for Create React App](/docs/create-a-new-react-app.html#create-react-app) to make a new project.
+ಈ ಸೆಟಪ್ಗೆ ಹೆಚ್ಚಿನ ಕೆಲಸ ಬೇಕಾಗುತ್ತದೆ ಆದರೆ ನಿಮ್ಮ ಆಯ್ಕೆಯ ಟೆಕ್ಸ್ಟ್ ಎಡಿಟರ್ ಬಳಸಿಕೊಂಡು ಟ್ಯುಟೋರಿಯಲ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸಬಹುದು. ಅನುಸರಿಸಲು ಹಂತಗಳು ಇಲ್ಲಿವೆ:
+
+1. ನೀವು "nodejs" ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು(ವರ್ಷನ್) ಹೊಂದಿರುವಿರಾ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ [Node.js](https://nodejs.org/en/).
+
+2. ಇಲ್ಲಿ ನೀಡಿರುವ ರ [ಿಯಾಕ್ಟ್ ಅಪ್ಲಿಕೇಶನ್ ಇನ್ಸ್ಟಾಲೇಷನ್ ಸೂಚನೆಗಳನ್ನು](/docs/create-a-new-react-app.html#create-react-app)  ಪಾಲಿಸಿದರೆ, ಒಂದು ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ರಚಿಸಲಾಗುವುದು.
 
 ```bash
 npx create-react-app my-app
 ```
 
-3. Delete all files in the `src/` folder of the new project 
+3. ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ನ `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿ ಎಲ್ಲಾ ಫೈಲ್ಗಳನ್ನು ಅಳಿಸಿ. 
 
-> Note:
+> ಸೂಚನೆ:
 >
->**Don't delete the entire `src` folder, just the original source files inside it.** We'll replace the default source files with examples for this project in the next step.
+>**ಸಂಪೂರ್ಣ `src` ಫೋಲ್ಡರ್ ಅಳಿಸಬೇಡಿ, ಅದರೊಳಗೆ ಮೂಲ ಮೂಲ ಫೈಲ್ಗಳು ಮಾತ್ರ.** ಮುಂದಿನ ಹಂತದಲ್ಲಿ ಪ್ರಾಜೆಕ್ಟ್ನ ಡೀಫಾಲ್ಟ್ ಫೈಲ್ಗಳನ್ನು ಉದಾಹರಣೆಗೆ ಫೈಲ್ಗಳೊಂದಿಗೆ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ.
 
 ```bash
 cd my-app
 cd src
 
-# If you're using a Mac or Linux:
+# ನೀವು ಮ್ಯಾಕ್ ಅಥವಾ ಲಿನಕ್ಸ್ ಅನ್ನು ಬಳಸುತ್ತಿದ್ದರೆ:
 rm -f *
 
-# Or, if you're on Windows:
+# ಅಥವಾ, ನೀವು Windows ನಲ್ಲಿದ್ದರೆ:
 del *
 
-# Then, switch back to the project folder
+# ನಂತರ, ಯೋಜನೆಯ ಫೋಲ್ಡರ್ಗೆ ಹಿಂತಿರುಗಿ
 cd ..
 ```
 
