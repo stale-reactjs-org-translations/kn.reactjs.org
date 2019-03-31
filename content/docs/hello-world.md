@@ -6,7 +6,7 @@ prev: cdn-links.html
 next: introducing-jsx.html
 ---
 
-The smallest React example looks like this:
+ಚಿಕ್ಕದಾದ ರಿಯಾಕ್ಟ್ ಉದಾಹರಣೆಗೆ ಇದು ಕಾಣುತ್ತದೆ:
 
 ```js
 ReactDOM.render(
@@ -15,20 +15,22 @@ ReactDOM.render(
 );
 ```
 
-It displays a heading saying "Hello, world!" on the page.
+ಇದು ಪೇಜಿನಲ್ಲಿ  "Hello, world!" ಎಂದು ಹೆಡಿಂಗ್ ತೋರಿಸುತದೆ
 
 [](codepen://hello-world)
 
-Click the link above to open an online editor. Feel free to make some changes, and see how they affect the output. Most pages in this guide will have editable examples like this one.
 
+ಆನ್ಲೈನ್ ಏಡಿಟೋರನ್ನು ತೆರೆಯಲು ಮೇಲಿನ ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ. ಕೆಲವು ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಮುಕ್ತವಾಗಿರಿ, ಮತ್ತು ಅವರು ಔಟ್ಪುಟ್ ಅನ್ನು ಹೇಗೆ ಪ್ರಭಾವಿಸುತ್ತಾರೆ ಎಂಬುದನ್ನು ನೋಡಿ. ಈ ಗೈಡಿನಲ್ಲಿ ಹೆಚ್ಚಿನ ಪುಟಗಳು ಈ ರೀತಿಯ ಸಂಪಾದಿಸಬಹುದಾದ ಉದಾಹರಣೆಗಳನ್ನು ಹೊಂದಿರುತ್ತವೆ.
 
-## How to Read This Guide {#how-to-read-this-guide}
+## ಈ ಗೈಡ್ ಅನ್ನು ಹೇಗೆ ಓದುವುದು {#how-to-read-this-guide}
 
-In this guide, we will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.
+ಈ ಮಾರ್ಗದರ್ಶಿಯಲ್ಲಿ, ನಾವು ರಿಯಾಕ್ಟ್ ಅಪ್ಲಿಕೇಶನ್ಗಳ ಬಿಲ್ಡಿಂಗ್ ಬ್ಲಾಕ್ಸ್ ಪರಿಶೀಲಿಸುತ್ತೇವೆ: ಎಲೆಮೆಂಟ್ಗಳು ಮತ್ತು ಕಾಂಪೊನೆಂಟ್ಗಳು. ಒಮ್ಮೆ ನೀವು ಅವುಗಳನ್ನು ಕರಗಿಸಿದರೆ, ಸಣ್ಣ ಪುನರ್ಬಳಕೆಯ ತುಣುಕುಗಳಿಂದ ಸಂಕೀರ್ಣ ಅಪ್ಲಿಕೇಶನ್ಗಳನ್ನು ನೀವು ರಚಿಸಬಹುದು.
 
->Tip
+>ಸಲಹೆ
 >
->This guide is designed for people who prefer **learning concepts step by step**. If you prefer to learn by doing, check out our [practical tutorial](/tutorial/tutorial.html). You might find this guide and the tutorial complementary to each other.
+
+ಈ ಮಾರ್ಗದರ್ಶಿ ** ಕಲಿಕೆಯ ಪರಿಕಲ್ಪನೆಗಳು ಹಂತ ಹಂತವಾಗಿ ** ಆದ್ಯತೆ ನೀಡುವ ಜನರಿಗೆ ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗಿದೆ..
+ಮಾಡುವ ಮೂಲಕ ನೀವು ತಿಳಿಯಲು ಬಯಸಿದಲ್ಲಿ, ನಮ್ಮ [ಪ್ರಾಯೋಗಿಕ ಟ್ಯುಟೋರಿಯಲ್](/tutorial/tutorial.html). ಈ ಮಾರ್ಗದರ್ಶಿ ಮತ್ತು ಟ್ಯುಟೋರಿಯಲ್ ಪರಸ್ಪರ ಪೂರಕವಾಗಬಹುದು.
 
 This is the first chapter in a step-by-step guide about main React concepts. You can find a list of all its chapters in the navigation sidebar. If you're reading this from a mobile device, you can access the navigation by pressing the button in the bottom right corner of your screen.
 
