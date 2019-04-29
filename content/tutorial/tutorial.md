@@ -54,7 +54,7 @@ redirect_from:
 
 ಎಚ್ಟಿಎಮ್ಎಲ್(HTML) ಮತ್ತು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್(JavaScript) ಗೆ ನಿಮಗೆ ಪರಿಚಯವಿದೆ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ, ಆದರೆ ನೀವು ಬೇರೊಂದು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆಯಿಂದ ಬಂದರೂ ಸಹ ನೀವು ಅನುಸರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ನೀವು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಪರಿಕಲ್ಪನೆಗಳಾದ ಫುನ್ಕ್ಷನ್ಸ್(Functions), ಒಬ್ಜೆಕ್ಟ್ಸ್(Objects), ಅರ್ರಯ್ಸ್(Arrays) ಮತ್ತು ಸ್ವಲ್ಪ ಮಟ್ಟಿಗೆ  ಕ್ಲಾಸೆಸ್(Classes) ತಿಳಿದಿರುವಿರಿ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ.
 
-ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾದರೆ, ನಾವು ಇದನ್ನು ಓದಲು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ [ಈ ಗೈಡ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). ನಾವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ES6 ನಿಂದ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸುತ್ತಿದ್ದೇವೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ಬಳಸುತ್ತಿದ್ದೇವೆ [ಆರೋ ಫುನ್ಕ್ಷನ್ಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [ಕ್ಲಾಸೆಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`ಲೆಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), ಮತ್ತು [`ಕಾಂಸ್ಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) ಸ್ಟೇಟಮೆಂಟ್ಸ್. ನೀವು [ಬಾಬೆಲ್ ರೆಪ್ಲ್](babel://es5-syntax-example) ಬಳಿಸಿ ಯಾವ ES6 ಕೋಡ್ ಜೊತೆ ಕಂಪೈಲ್ ಹಾಗುವುದೆಂದು ನೋಡಬಹುದು.
+ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾದರೆ, ನಾವು [ಈ ಗೈಡ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) ಓದಲು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. ನಾವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ES6 ನಿಂದ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸಿತೇವೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ಬಳಸುತ್ತಿದ್ದೇವೆ [ಆರೋ ಫುನ್ಕ್ಷನ್ಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [ಕ್ಲಾಸೆಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`ಲೆಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), ಮತ್ತು [`ಕಾಂಸ್ಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) ಸ್ಟೇಟಮೆಂಟ್ಸ್. ನೀವು [ಬಾಬೆಲ್ ರೆಪ್ಲ್](babel://es5-syntax-example) ಬಳಿಸಿ ಯಾವ ES6 ಕೋಡ್ ಜೊತೆ ಕಂಪೈಲ್ ಹಾಗುವುದೆಂದು ನೋಡಬಹುದು.
 
 ## ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್ {#setup-for-the-tutorial}
 
@@ -131,15 +131,18 @@ import './index.css';
 
 ನಿಮಗೆ ಮುಂದೂಡಲು ಸಾಧ್ಯವಾಗುತಿಲ್ಲವೆಂದರೆ, [ಕಮ್ಯೂನಿಟಿ ಸಪೋರ್ಟ್ ರಿಸೋರ್ಸಸ್](/community/support.html) ನಲ್ಲಿ ನಿಮಗೆ ಸಹಾಯ ಸಿಗುತ್ತದೆ. ನಿರ್ದಿಷ್ಟವಾಗಿ, [ರಿಯಾಕ್ಟ್ ಫ್ಲಕ್ಸ್ ಚಾಟ್](https://discord.gg/0ZcbPKXt5bZjGY5n) ನಲ್ಲಿ ನೀವು ಶೀಘ್ರ ಸಹಾಯ ಪಡೆಯುತ್ತೀರಿ. ನೀವು ಉತ್ತರವನ್ನು ಸಿಗದಿದ್ದರೆ, ಅಥವಾ ನಿಮಗೆ ಮುಂದೂಡಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ, ದಯವಿಟ್ಟು ಸಮಸ್ಯೆಯನ್ನು (ಇಶ್ಯೂ) ಫೈಲ್ ಮಾಡಿ, ಮತ್ತು ನಾವು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತೇವೆ.
 
-## Overview {#overview}
+## ಅವಲೋಕನ (ಓವರ್ವ್ಯೂ) {#overview}
 
-Now that you're set up, let's get an overview of React!
+ಈಗ ಸೆಟಪ್ಆಗಿರುವುದರಿಂದ, ಮುಂದೆ ನಾವು ಈಗ ರಿಯಾಕ್ಟ್ ಎಂದರೇನು ಅಂತ ನೋಡೋಣ (ಓವರ್ವ್ಯೂ)
 
-### What Is React? {#what-is-react}
+### ರಿಯಾಕ್ಟ್ ಎಂದರೇನು? {#what-is-react}
 
-React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called "components".
+ರಿಯಾಕ್ಟ್ ಒಂದು ಘೋಷಣಾತ್ಮಕ (ಡೆಕ್ಲಾರಟಿವೆ), ಸಮರ್ಥ, and ಹೊಂದಿಕೊಳ್ಳುವ (ಫ್ಲೆಕ್ಸಿಬಲ್) ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಲೈಬ್ರರಿ. ಇದು ಬಳಕೆದಾರ ಅಥವಾ ಉಪಯೋಗಿಸುವವನು (ಯೂಸರ್) ಇಂಟರ್ಫೇಸ್ಗಳನ್ನು (ಯು ಐ ಇಂಟರ್ಫೇಸ್) ತಯಾರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ. 
+<br>
+ಸಂಕೀರ್ಣ ಯುಐಗಳನ್ನು "ಘಟಕಗಳು"(ಕಾಂಪೊನೆಂಟ್ಸ್) ಎಂಬ ಸಣ್ಣ ಮತ್ತು ಪ್ರತ್ಯೇಕವಾದ ತುಣುಕುಗಳಿಂದ ಸಂಯೋಜಿಸಲು ಇದರಿ೦ದ ಸಾಧ್ಯ.
 
-React has a few different kinds of components, but we'll start with `React.Component` subclasses:
+
+ಪ್ರತಿಕ್ರಿಯೆಯು ಕೆಲವು ವಿಭಿನ್ನ ರೀತಿಯ ಅಂಶಗಳನ್ನು ಹೊಂದಿದೆ, ಆದರೆ ನಾವು `ರಿಯಾಕ್ಟ್.ಕಂಪೋನೆಂಟ್` ಉಪವರ್ಗಗಳೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುತ್ತೇವೆ:
 
 ```javascript
 class ShoppingList extends React.Component {
@@ -160,11 +163,12 @@ class ShoppingList extends React.Component {
 // Example usage: <ShoppingList name="Mark" />
 ```
 
-We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+ನಾವು ಶೀಘ್ರದಲ್ಲೇ XML- ನಂತಹ ಟ್ಯಾಗ್ಗಳ ಬಗ್ಗೆ ಮಾತನಾಡುತ್ತೇವೆ. ನಾವು ಕಾಂಪೊನೆಂಟ್ಸ್ ಮೂಲಕ ರಿಯಾಕ್ಟ್ ಗೆ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ಏನು ನೋಡಬೇಕೆಂದು ಹೇಳುತ್ತೆವೆ. ನಮ್ಮ ಡೇಟಾ ಬದಲಾದರೆ, ರಿಯಾಕ್ಟ್, ನಮ್ಮ ಘಟಕಗಳನ್ನು (ಕಾಂಪೊನೆಂಟ್ಸ್) ಪರಿಣಾಮಕಾರಿಯಾಗಿ ನವೀಕರಿಸಿ ಮರು-ನಿರೂಪಿಸುತ್ತದೆ.
 
-Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for "properties"), and returns a hierarchy of views to display via the `render` method.
+ಇಲ್ಲಿ, ShoppingList ಒಂದು **ರಿಯಾಕ್ಟ್ ಕಂಪೋನೆಂಟ್ ಕ್ಲಾಸ್**, ಅಥವಾ **ರಿಯಾಕ್ಟ್ ಕಂಪೋನೆಂಟ್ ಟೈಪ್**. ಒಂದು ಕಂಪೋನೆಂಟ್ ಹಲವಾರು ನಿಯತಾಂಕಗಳು (ಪಾರಮೇಟರ್ಸ್) ತೆಗೆದುಕೊಳ್ಳುತದೆ. ಇದನ್ನು  `ಪ್ರಾಪ್ಸ್`(`props`) ("ಪ್ರಾಪರ್ಟೀಸ್" ಶಬ್ದದ ಸಣ್ಣ ರೂಪ) ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ,  ಮತ್ತು `render`(ರಂಡೆರ್) ಮೆಥಡ್ ಮೂಲಕ ಪ್ರದರ್ಶಿಸಲು ವೀಕ್ಷಣೆಗಳ ಕ್ರಮಾನುಗತವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ.
 
-The `render` method returns a *description* of what you want to see on the screen. React takes the description and displays the result. In particular, `render` returns a **React element**, which is a lightweight description of what to render. Most React developers use a special syntax called "JSX" which makes these structures easier to write. The `<div />` syntax is transformed at build time to `React.createElement('div')`. The example above is equivalent to:
+
+ರಿಯಾಕ್ಟ್ `render (ರೆಂಡೆರ್)` ಮೆಥಡ್ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ನೀವು ನೋಡಲು ಬಯಸುವ * ವಿವರಣೆಯನ್ನು * ಹಿಂದಿರುಗಿಸುತ್ತದೆ. ರಿಯಾಕ್ಟ್ ವಿವರಣೆಯನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ ಮತ್ತು ಫಲಿತಾಂಶವನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ. ನಿರ್ದಿಷ್ಟವಾಗಿ, `ರೆಂಡರ್` ರಿಟರ್ನ್ಸ್ ** ರಿಯಾಕ್ಟ್ ಎಲಿಮೆಂಟ್ **, ಅದು ಏನು ನಿರೂಪಿಸಲು ಒಂದು ಹಗುರವಾದ ವಿವರಣೆಯಾಗಿದೆ. ಹೆಚ್ಚಿನ ರಿಯಾಕ್ಟ್ ಡೆವೆಲೊಫೇರ್ಸ್ "JSX" ಎಂಬ ವಿಶೇಷ ಸಿಂಟ್ಯಾಕ್ಸ್ ಅನ್ನು ಬಳಸುತ್ತಾರೆ, ಅದು ಈ ರಚನೆಗಳನ್ನು ಬರೆಯಲು ಸುಲಭವಾಗುತ್ತದೆ. `<Div />` ಸಿಂಟ್ಯಾಕ್ಸ್ ಅನ್ನು 'ರಿಯಾಕ್ಟ್.ಕ್ರೀಟ್ ಎಲಿಮೆಂಟ್' ('ಡಿವಿ') `ಗೆ ಬಿಲ್ಡ್ ಸಮಯದಲ್ಲಿ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ. ಮೇಲಿನ ಉದಾಹರಣೆಯು ಇದಕ್ಕೆ ಸಮನಾಗಿರುತ್ತದೆ:
 
 ```javascript
 return React.createElement('div', {className: 'shopping-list'},
@@ -173,11 +177,11 @@ return React.createElement('div', {className: 'shopping-list'},
 );
 ```
 
-[See full expanded version.](babel://tutorial-expanded-version)
+[ಪೂರ್ಣ ವಿಸ್ತರಿತ ಆವೃತ್ತಿಯನ್ನು ನೋಡಿ.](babel://tutorial-expanded-version)
 
-If you're curious, `createElement()` is described in more detail in the [API reference](/docs/react-api.html#createelement), but we won't be using it in this tutorial. Instead, we will keep using JSX.
+ನೀವು ಕುತೂಹಲಕಾರಿಯಾಗಿದ್ದರೆ `createElement()` ಇಲ್ಲಿ, [API reference](/docs/react-api.html#createelement), ಹೆಚ್ಚು ವಿವರವಾಗಿ ವಿವರಿಸಲಾಗಿದೆ. ಆದರೆ ನಾವು ಈ ಟ್ಯುಟೋರಿಯಲ್ನಲ್ಲಿ ಅದನ್ನು ಬಳಸುವುದಿಲ್ಲ. ಬದಲಾಗಿ, ನಾವು JSX ಅನ್ನು ಬಳಸುತ್ತೇವೆ.
 
-JSX comes with the full power of JavaScript. You can put *any* JavaScript expressions within braces inside JSX. Each React element is a JavaScript object that you can store in a variable or pass around in your program.
+JSX ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಪೂರ್ಣ ಶಕ್ತಿಯೊಂದಿಗೆ ಬರುತ್ತದೆ. ನೀವು JSX ಒಳಗೆ ಕಟ್ಟುಪಟ್ಟಿಗಳಲ್ಲಿ ಯಾವುದೇ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಅಭಿವ್ಯಕ್ತಿಗಳನ್ನು ಹಾಕಬಹುದು. ಪ್ರತಿ ಪ್ರತಿಕ್ರಿಯಾ ಅಂಶವು ಒಂದು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ವಸ್ತುವೆಂದರೆ ನೀವು ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿ ವೇರಿಯೇಬಲ್ ಅಥವಾ ಪಾಸ್ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಬಹುದು.
 
 The `ShoppingList` component above only renders built-in DOM components like `<div />` and `<li />`. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing `<ShoppingList />`. Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
 
