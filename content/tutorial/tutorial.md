@@ -1,6 +1,6 @@
 ---
 id: tutorial
-title: "Tutorial: Intro to React"
+title: "ಟುಟೋರಿಯಲ್: ರಿಯಾಕ್ಟ್ ಗೆ ಪರಿಚಯ"
 layout: tutorial
 sectionid: tutorial
 permalink: tutorial/tutorial.html
@@ -12,97 +12,108 @@ redirect_from:
   - "docs/tutorial-zh-CN.html"
 ---
 
-This tutorial doesn't assume any existing React knowledge.
 
-## Before We Start the Tutorial {#before-we-start-the-tutorial}
+ಊಹೆ: ನಿಮಗೆ ರಿಯಾಕ್ಟ್ ಬಗ್ಗೆ ಮೊದಲಿನ ಜ್ಞಾನ ಅಗತ್ಯವಿಲ್ಲ.
+  
+## ನಾವು ಟ್ಯುಟೋರಿಯಲ್ ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು {#before-we-start-the-tutorial}
 
-We will build a small game during this tutorial. **You might be tempted to skip it because you're not building games -- but give it a chance.** The techniques you'll learn in the tutorial are fundamental to building any React apps, and mastering it will give you a deep understanding of React.
 
->Tip
+ಈ ಟ್ಯುಟೋರಿಯಲ್ ಸಮಯದಲ್ಲಿ ನಾವು ಒಂದು ಸಣ್ಣ ಆಟವನ್ನು ನಿರ್ಮಿಸುತ್ತೇವೆ. **ನೀವು ಆಟಗಳನ್ನು ನಿರ್ಮಿಸುತ್ತಿಲ್ಲವಾದ್ದರಿಂದ, ನೀವು ಅದನ್ನು ಬಿಟ್ಟುಬಿಡಲು ಬಯಸಬಹುದು -- ಆದರೆ ಇದಕ್ಕೆ ಒಂದು ಅವಕಾಶ ನೀಡಿ.** ನೀವು ಈ ಟ್ಯುಟೋರಿಯಲ್ನಿಂದ ಕಲಿಯುವ ತಂತ್ರಗಳು ಯಾವುದೇ ರಿಯಾಕ್ಟ್ ಅಪ್ಲಿಕೇಶನ್ ನಿರ್ಮಿಸಲು ನಿಮಗೆ ಬಲವಾದ ಮೂಲಭೂತ  ತಿಳುವಳಿಕೆ ನೀಡುತ್ತದೆ.
+
+>ಸಲಹೆ
 >
->This tutorial is designed for people who prefer to **learn by doing**. If you prefer learning concepts from the ground up, check out our [step-by-step guide](/docs/hello-world.html). You might find this tutorial and the guide complementary to each other.
+> ಈ ಟ್ಯುಟೋರಿಯಲ್  **ಮಾಡುವ ಮೂಲಕ ಕಲಿಯುವವರಿಗೆ**. ನೀವು ಬೇಸಿಕ್ಸ್ಗಳಿಂದ ಕಲಿಯಲು ಬಯಸಿದರೆ, ನೀವು [ಸ್ಟೆಪ್ ಬೈ ಸ್ಟೆಪ್ ಗೈಡ್](/docs/hello-world.html) ನೋಡಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ಮತ್ತು ಗೈಡ್ ಪೂರಕವನ್ನು ನೀವು ಕಾಣಬಹುದು.
 
-The tutorial is divided into several sections:
 
-* [Setup for the Tutorial](#setup-for-the-tutorial) will give you **a starting point** to follow the tutorial.
-* [Overview](#overview) will teach you **the fundamentals** of React: components, props, and state.
-* [Completing the Game](#completing-the-game) will teach you **the most common techniques** in React development.
-* [Adding Time Travel](#adding-time-travel) will give you **a deeper insight** into the unique strengths of React.
+ಟ್ಯುಟೋರಿಯಲ್ ಹಲವಾರು ಭಾಗಗಳಾಗಿ ವಿಂಗಡಿಸಲಾಗಿದೆ:
 
-You don't have to complete all of the sections at once to get the value out of this tutorial. Try to get as far as you can -- even if it's one or two sections.
 
-### What Are We Building? {#what-are-we-building}
+* [ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್](#setup-for-the-tutorial) ಟ್ಯುಟೋರಿಯಲ್ ಅನ್ನು ಅನುಸರಿಸಲು **ಪ್ರಾರಂಭದ ಬಿಂದುವನ್ನು** ನಿಮಗೆ ನೀಡುತ್ತದೆ.
+* [ಅವಲೋಕನ (ಓವರ್ವ್ಯೂ)](#overview) ನಿಮಗೆ ರಿಯಾಕ್ಟ್ **ಮೂಲಭೂತ** ಶಿಕ್ಷಣವನ್ನು ನೀಡುತ್ತದೆ:  ಕಾಂಪೊನೆಂಟ್ಸ್, ಪ್ರಾಪ್ಸ್, ಮತ್ತು  ಸ್ಟೇಟ್.
+* [ನೀವು ಆಟ ಮುಗಿಸಿದರೆ](#completing-the-game), "ರಿಯಾಕ್ಟ್"ಲ್ಲಿರುವ ಎಲ್ಲಾ ತಂತ್ರಗಳು ಕಲಿಯುವಿರಿ
+* [ಸಮಯ ಪ್ರಯಾಣವನ್ನು ಸೇರಿಸುವುದು](#adding-time-travel) (ಇದು ಕೊನೆಯ ಅಭ್ಯಾಸ),  ನಿಮಗೆ "ರಿಯಾಕ್ಟ್"ಲ್ಲಿರುವ ಅನನ್ಯ ಸಾಮರ್ಥ್ಯದ **ಆಳವಾದ ಒಳನೋಟ(ಇನ್ಸೈಟ್)** ಸಸಿಗುತ್ತದೆ.
 
-In this tutorial, we'll show how to build an interactive tic-tac-toe game with React.
 
-You can see what we'll be building here: **[Final Result](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. If the code doesn't make sense to you, or if you are unfamiliar with the code's syntax, don't worry! The goal of this tutorial is to help you understand React and its syntax.
+ಈ ಟ್ಯುಟೋರಿಯಲ್ನ ಮೌಲ್ಯವನ್ನು ಪಡೆಯಲು ನೀವು ಎಲ್ಲಾ ವಿಭಾಗಗಳನ್ನು ಏಕಕಾಲದಲ್ಲಿ ಪೂರ್ಣಗೊಳಿಸಬೇಕಾಗಿಲ್ಲ. ನೀವು ಸಾಧ್ಯವಾದಷ್ಟು ಪ್ರಯತ್ನಿಸಿ -- ಒಂದು ಅಥವಾ ಎರಡು ವಿಭಾಗಗಳಿದ್ದರೂ ಸಹ, ನೀವು ಅದರ ಉಪಯೋಗ ಕಾಣುತ್ತೀರಿ.
 
-We recommend that you check out the tic-tac-toe game before continuing with the tutorial. One of the features that you'll notice is that there is a numbered list to the right of the game's board. This list gives you a history of all of the moves that have occurred in the game, and is updated as the game progresses.
+### ನಾವು ಏನು ನಿರ್ಮಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದ್ದೇವೆ? {#what-are-we-building}
 
-You can close the tic-tac-toe game once you're familiar with it. We'll be starting from a simpler template in this tutorial. Our next step is to set you up so that you can start building the game.
+ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ನಿಮಗೆ ರಿಯಾಕ್ಟ್ ಮೂಲಕ "ಟಿಕ್-ಟಾಕ್-ಟೊ" ಆಟ ಹೇಗೆ ಮಾಡುವುದೆ೦ದು ತೋರಿಸುತ್ತೇವೆ.
 
-### Prerequisites {#prerequisites}
+ನಾವು ಇಲ್ಲಿ ಏನು ಮಾಡುತ್ತಿದ್ದೇವೆಂದು ನೀವು ನೋಡಬಹುದು: **[ಫೈನಲ್  ರಿಸಲ್ಟ್ ](https://codepen.io/gaearon/pen/gWWZgR?editors=0010)**. ಕೋಡ್ ನಿಮಗೆ ಅರ್ಥವಾಗುತ್ತಿಲ್ಲ, ಅಥವಾ, ಕೋಡ್ ಸಿಂಟ್ಯಾಕ್ಸ್ ಅರ್ಥವಾಗುತ್ತಿಲ್ಲ, ಚಿಂತಿಸಬೇಡಿ! ಈ ಟ್ಯುಟೋರಿಯಲ್ ಗುರಿ ನಿಮಗೆ ಕೋಡ್ ಮತ್ತು ಸಿಂಟ್ಯಾಕ್ಸ್ ನಿಮಗೆ ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
 
-We'll assume that you have some familiarity with HTML and JavaScript, but you should be able to follow along even if you're coming from a different programming language. We'll also assume that you're familiar with programming concepts like functions, objects, arrays, and to a lesser extent, classes.
+ನಮ್ಮ ಶಿಫಾರಸು - ನೀವು ಟ್ಯುಟೋರಿಯಲ್ ಅನ್ನು ಮುಂದುವರಿಸುವ ಮೊದಲು ಒಮ್ಮೆ ನೀವು ಟಿಕ್-ಟಾಕ್-ಟೋ ಕೋಡ್ ನೋಡಿ.
 
-If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript). Note that we're also using some features from ES6 -- a recent version of JavaScript. In this tutorial, we're using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), and [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) statements. You can use the [Babel REPL](babel://es5-syntax-example) to check what ES6 code compiles to.
 
-## Setup for the Tutorial {#setup-for-the-tutorial}
+ಈ ಆಟದಲ್ಲಿ ಹಲವಾರು ವೈಶಿಷ್ಟ್ಯಗಳಿವೆ, ಅವುಗಳಲ್ಲಿ ಒಂದು, ಗೇಮ್ ಬೋರ್ಡಿನ ಬಲಭಾಗದಲ್ಲಿ ಸಂಖ್ಯೆಯ ಪಟ್ಟಿ ಇದೆ. ಈ ಪಟ್ಟಿಯಲ್ಲಿ ನೀವು ಆಟದ ಎಲ್ಲಾ ಚಲನೆಗಳ ಇತಿಹಾಸವನ್ನು ನೀಡುತ್ತದೆ, ಮತ್ತು ಆಟದ ಮುಂದುವರೆದಂತೆ ಅದನ್ನು ನವೀಕರಿಸಲಾಗುತ್ತದೆ.
 
-There are two ways to complete this tutorial: you can either write the code in your browser, or you can set up a local development environment on your computer.
 
-### Setup Option 1: Write Code in the Browser {#setup-option-1-write-code-in-the-browser}
+ನಿಮಗೆ ತಿಳಿದಿರುವ ನಂತರ ನೀವು ಟಿಕ್-ಟಾಕ್-ಟೋ ಆಟವನ್ನು ಮುಚ್ಚಬಹುದು. ಈ ಟ್ಯುಟೋರಿಯಲ್ನಲ್ಲಿ ನಾವು ಸರಳ ಟೆಂಪ್ಲೆಟ್ನಿಂದ ಪ್ರಾರಂಭಿಸುತ್ತೇವೆ. ನಮ್ಮ ಮುಂದಿನ ಹಂತವು ನಿಮ್ಮನ್ನು ಸ್ಥಾಪಿಸುವ ಮೂಲಕ ನೀವು ಆಟವನ್ನು ನಿರ್ಮಿಸಲು ಪ್ರಾರಂಭಿಸಬಹುದು.
 
-This is the quickest way to get started!
+### ಪೂರ್ವಾಪೇಕ್ಷಿತಗಳು (ಪ್ರೇರೆಕ್ಕ್ಇಸಿಟಿಎಸ್) {#prerequisites}
 
-First, open this **[Starter Code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)** in a new tab. The new tab should display an empty tic-tac-toe game board and React code. We will be editing the React code in this tutorial.
+ಎಚ್ಟಿಎಮ್ಎಲ್(HTML) ಮತ್ತು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್(JavaScript) ಗೆ ನಿಮಗೆ ಪರಿಚಯವಿದೆ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ, ಆದರೆ ನೀವು ಬೇರೊಂದು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆಯಿಂದ ಬಂದರೂ ಸಹ ನೀವು ಅನುಸರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. ನೀವು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಪರಿಕಲ್ಪನೆಗಳಾದ ಫುನ್ಕ್ಷನ್ಸ್(Functions), ಒಬ್ಜೆಕ್ಟ್ಸ್(Objects), ಅರ್ರಯ್ಸ್(Arrays) ಮತ್ತು ಸ್ವಲ್ಪ ಮಟ್ಟಿಗೆ  ಕ್ಲಾಸೆಸ್(Classes) ತಿಳಿದಿರುವಿರಿ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ.
 
-You can now skip the second setup option, and go to the [Overview](#overview) section to get an overview of React.
+ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ರಿಫ್ರೆಶ್ ಮಾಡಬೇಕಾದರೆ, ನಾವು [ಈ ಗೈಡ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) ಓದಲು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. ನಾವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು ES6 ನಿಂದ ಕೆಲವು ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಬಳಸಿತೇವೆ ಎಂಬುದನ್ನು ಗಮನಿಸಿ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ, ನಾವು ಬಳಸುತ್ತಿದ್ದೇವೆ [ಆರೋ ಫುನ್ಕ್ಷನ್ಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), [ಕ್ಲಾಸೆಸ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes), [`ಲೆಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let), ಮತ್ತು [`ಕಾಂಸ್ಟ್`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) ಸ್ಟೇಟಮೆಂಟ್ಸ್. ನೀವು [ಬಾಬೆಲ್ ರೆಪ್ಲ್](babel://es5-syntax-example) ಬಳಿಸಿ ಯಾವ ES6 ಕೋಡ್ ಜೊತೆ ಕಂಪೈಲ್ ಹಾಗುವುದೆಂದು ನೋಡಬಹುದು.
 
-### Setup Option 2: Local Development Environment {#setup-option-2-local-development-environment}
+## ಟ್ಯುಟೋರಿಯಲ್ಗಾಗಿ ಸೆಟಪ್ {#setup-for-the-tutorial}
 
-This is completely optional and not required for this tutorial!
+ಈ ಟ್ಯುಟೋರಿಯಲ್ ಪೂರ್ಣಗೊಳಿಸಲು ಎರಡು ಮಾರ್ಗಗಳಿವೆ: ನೀವು ನಿಮ್ಮ ಬ್ರೌಸರ್ನಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಬರೆಯಬಹುದು, ಅಥವಾ ನೀವು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್ನಲ್ಲಿ ಲೋಕಲ್ ಡೆವಲಪ್ಮೆಂಟ್ ಸೆಟಪ್ ಮಾಡಬಹುದು
+
+### ಸೆಟಪ್ ಮಾರ್ಗ ಒಂದು: ಬ್ರೌಸರ್ನಲ್ಲಿ ಕೋಡ್ ಅನ್ನು ಬರೆಯಬಹುದು {#setup-option-1-write-code-in-the-browser}
+
+ಪ್ರಾರಂಭಿಸಲು ಇದು ತ್ವರಿತ ಮಾರ್ಗ!
+
+ಮೊದಲು, ಇದನ್ನು  ಹೊಸ ಟ್ಯಾಬ್ನಲ್ಲಿ ತೆರೆಯಿರಿ **[ಸ್ಟಾರ್ಟರ್ ಕೋಡ್](https://codepen.io/gaearon/pen/oWWQNa?editors=0010)**. ಹೊಸ ಟ್ಯಾಬ್ ಖಾಲಿ "ಟಿಕ್-ಟಾಕ್-ಟೋ" ಗೇಮ್ ಬೋರ್ಡ್ ಮತ್ತು ರಿಯಾಕ್ಟ್ ಕೋಡ್ ಅನ್ನು ತೋರಿಸುತ್ತದೆ. ಈ ಟ್ಯುಟೋರಿಯಲ್ ನಲ್ಲಿ ನಾವು ರಿಯಾಕ್ಟ್ ಕೋಡ್ ಅನ್ನು ಸಂಪಾದಿಸುತ್ತೇವೆ (ಎಡಿಟ್ ಮಾಡುವುದು).
+
+ನೀವು ಈಗ ಎರಡನೇ ಸೆಟಪ್ ಆಯ್ಕೆಯನ್ನು ಬಿಟ್ಟುಬಿಡಬಹುದು ಮತ್ತು ಪ್ರತಿಕ್ರಿಯೆಯ [ಅವಲೋಕನ (ಓವರ್ವ್ಯೂ)](#overview) ವಿಭಾಗಕ್ಕೆ ಹೋಗಬಹುದು.
+
+### ಸೆಟಪ್ ಮಾರ್ಗ ಎರಡು: ಲೋಕಲ್ ಡೆವಲಪ್ಮೆಂಟ್ ಎನ್ವಿರಾನ್ಮೆಂಟ್ {#setup-option-2-local-development-environment}
+
+ಈ ಟ್ಯುಟೋರಿಯಲ್ಗೆ ಇದು ಸಂಪೂರ್ಣವಾಗಿ ಐಚ್ಛಿಕವಾಗಿರುತ್ತದೆ ಮತ್ತು ಅಗತ್ಯವಿಲ್ಲ!
 
 <br>
 
 <details>
 
-<summary><b>Optional: Instructions for following along locally using your preferred text editor</b></summary>
+<summary><b>ಐಚ್ಛಿಕ: ನಿಮ್ಮ ಆದ್ಯತೆಯ ಲೋಕಲ್ ಟೆಕ್ಸ್ಟ್ ಎಡಿಟರ್ ಬಳೆಸುವುದಕೆ ಸೂಚನೆಗಳು</b></summary>
 
-This setup requires more work but allows you to complete the tutorial using an editor of your choice. Here are the steps to follow:
 
-1. Make sure you have a recent version of [Node.js](https://nodejs.org/en/) installed.
-2. Follow the [installation instructions for Create React App](/docs/create-a-new-react-app.html#create-react-app) to make a new project.
+ಈ ಸೆಟಪ್ಗೆ ಹೆಚ್ಚಿನ ಕೆಲಸ ಬೇಕಾಗುತ್ತದೆ ಆದರೆ ನಿಮ್ಮ ಆಯ್ಕೆಯ ಟೆಕ್ಸ್ಟ್ ಎಡಿಟರ್ ಬಳಸಿಕೊಂಡು ಟ್ಯುಟೋರಿಯಲ್ ಅನ್ನು ಪೂರ್ಣಗೊಳಿಸಬಹುದು. ಅನುಸರಿಸಲು ಹಂತಗಳು ಇಲ್ಲಿವೆ:
+
+1. ನೀವು "nodejs" ನ ಇತ್ತೀಚಿನ ಆವೃತ್ತಿಯನ್ನು(ವರ್ಷನ್) ಹೊಂದಿರುವಿರಾ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ [Node.js](https://nodejs.org/en/).
+
+2. ಇಲ್ಲಿ ನೀಡಿರುವ ರ [ಿಯಾಕ್ಟ್ ಅಪ್ಲಿಕೇಶನ್ ಇನ್ಸ್ಟಾಲೇಷನ್ ಸೂಚನೆಗಳನ್ನು](/docs/create-a-new-react-app.html#create-react-app)  ಪಾಲಿಸಿದರೆ, ಒಂದು ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ ರಚಿಸಲಾಗುವುದು.
 
 ```bash
 npx create-react-app my-app
 ```
 
-3. Delete all files in the `src/` folder of the new project 
+3. ಹೊಸ ಪ್ರಾಜೆಕ್ಟ್ನ `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿ ಎಲ್ಲಾ ಫೈಲ್ಗಳನ್ನು ಅಳಿಸಿ. 
 
-> Note:
+> ಸೂಚನೆ:
 >
->**Don't delete the entire `src` folder, just the original source files inside it.** We'll replace the default source files with examples for this project in the next step.
+>**ಸಂಪೂರ್ಣ `src` ಫೋಲ್ಡರ್ ಅಳಿಸಬೇಡಿ, ಅದರೊಳಗೆ ಮೂಲ ಮೂಲ ಫೈಲ್ಗಳು ಮಾತ್ರ.** ಮುಂದಿನ ಹಂತದಲ್ಲಿ ಪ್ರಾಜೆಕ್ಟ್ನ ಡೀಫಾಲ್ಟ್ ಫೈಲ್ಗಳನ್ನು ಉದಾಹರಣೆಗೆ ಫೈಲ್ಗಳೊಂದಿಗೆ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ.
 
 ```bash
 cd my-app
 cd src
 
-# If you're using a Mac or Linux:
+# ನೀವು ಮ್ಯಾಕ್ ಅಥವಾ ಲಿನಕ್ಸ್ ಅನ್ನು ಬಳಸುತ್ತಿದ್ದರೆ:
 rm -f *
 
-# Or, if you're on Windows:
+# ಅಥವಾ, ನೀವು Windows ನಲ್ಲಿದ್ದರೆ:
 del *
 
-# Then, switch back to the project folder
+# ನಂತರ, ಯೋಜನೆಯ ಫೋಲ್ಡರ್ಗೆ ಹಿಂತಿರುಗಿ
 cd ..
 ```
 
-4. Add a file named `index.css` in the `src/` folder with [this CSS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0100).
+4. `index.css` ಎ೦ಬ ಫೈಲ್ ಮಾಡಿ [ಈ ಸಿಎಸ್ಎಸ್ ಕೋಡ್](https://codepen.io/gaearon/pen/oWWQNa?editors=0100) ನಕಲು ಅಂಟಿಸಿ `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿ ಇಟ್ಟುಕೊಳ್ಳಿ.
 
-5. Add a file named `index.js` in the `src/` folder with [this JS code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010).
+5. `index.js` ಎ೦ಬ ಫೈಲ್ ಮಾಡಿ [ಈ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಕೋಡ್](https://codepen.io/gaearon/pen/oWWQNa?editors=0100) ನಕಲು ಅಂಟಿಸಿ `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿ ಇಟ್ಟುಕೊಳ್ಳಿ.
 
-6. Add these three lines to the top of `index.js` in the `src/` folder:
+6. `src/` ಫೋಲ್ಡರ್ನಲ್ಲಿರುವ `index.js` ಫೈಲಿನಲ್ಲಿ ಈ ಮೂರು ಸಾಲುಗಳನ್ನು ೇಲ್ಭಾಗಕ್ಕೆ ಸೇರಿಸಿ.
 
 ```js
 import React from 'react';
@@ -110,25 +121,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 ```
 
-Now if you run `npm start` in the project folder and open `http://localhost:3000` in the browser, you should see an empty tic-tac-toe field.
-
-We recommend following [these instructions](https://babeljs.io/docs/editors/) to configure syntax highlighting for your editor.
+ಈಗ ನೀವು ಪ್ರಾಜೆಕ್ಟ್ ಫೋಲ್ಡೆರ್ನಲ್ಲಿದು, `npm start`ಕಮಾಂಡ್ ಕೊಟ್ಟಾದಮೇಲೆ, ನಿಮ್ಮ ಬ್ರೌಸರ್ನಲ್ಲಿ `http://localhost:3000` ಎಂದು ಟೈಪ್ ಮಾಡಿಧರೆ, ನೀವು "ಟಿಕ್-ಟಾಕ್-ಟೋ" ಆಟದ ಖಾಲಿ ಬೋರ್ಡ್ ನೋಡುತ್ತೀರಿ.
+ 
+[ಈ ಸೂಚನೆಗಳನ್ನು] (https://babeljs.io/docs/editors/) ಅನುಸರಿಸಿಸಲು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ. ಇದರೊಂದಿಗೆ ನಿಮ್ಮ ಎಡಿಟರ್ ಸಿಂಟ್ಯಾಕ್ಸ್ ಹೈಲೈಟ್ ಅನ್ನು ಸಂರಚಿಸಲು (ಕಾನ್ಫಿಗರ್) ಆಗುವುದು.
 
 </details>
 
-### Help, I'm Stuck! {#help-im-stuck}
+### ಸಹಾಯ, ನಾನು ಮುಂದುವರೆಯಲು ಸಾಧ್ಯವಾಗುತಿಲ್ಲ! {#help-im-stuck}
 
-If you get stuck, check out the [community support resources](/community/support.html). In particular, [Reactiflux Chat](https://discord.gg/0ZcbPKXt5bZjGY5n) is a great way to get help quickly. If you don't receive an answer, or if you remain stuck, please file an issue, and we'll help you out.
+ನಿಮಗೆ ಮುಂದೂಡಲು ಸಾಧ್ಯವಾಗುತಿಲ್ಲವೆಂದರೆ, [ಕಮ್ಯೂನಿಟಿ ಸಪೋರ್ಟ್ ರಿಸೋರ್ಸಸ್](/community/support.html) ನಲ್ಲಿ ನಿಮಗೆ ಸಹಾಯ ಸಿಗುತ್ತದೆ. ನಿರ್ದಿಷ್ಟವಾಗಿ, [ರಿಯಾಕ್ಟ್ ಫ್ಲಕ್ಸ್ ಚಾಟ್](https://discord.gg/0ZcbPKXt5bZjGY5n) ನಲ್ಲಿ ನೀವು ಶೀಘ್ರ ಸಹಾಯ ಪಡೆಯುತ್ತೀರಿ. ನೀವು ಉತ್ತರವನ್ನು ಸಿಗದಿದ್ದರೆ, ಅಥವಾ ನಿಮಗೆ ಮುಂದೂಡಲು ಸಾಧ್ಯವಾಗದಿದ್ದರೆ, ದಯವಿಟ್ಟು ಸಮಸ್ಯೆಯನ್ನು (ಇಶ್ಯೂ) ಫೈಲ್ ಮಾಡಿ, ಮತ್ತು ನಾವು ನಿಮಗೆ ಸಹಾಯ ಮಾಡುತ್ತೇವೆ.
 
-## Overview {#overview}
+## ಅವಲೋಕನ (ಓವರ್ವ್ಯೂ) {#overview}
 
-Now that you're set up, let's get an overview of React!
+ಈಗ ಸೆಟಪ್ಆಗಿರುವುದರಿಂದ, ಮುಂದೆ ನಾವು ಈಗ ರಿಯಾಕ್ಟ್ ಎಂದರೇನು ಅಂತ ನೋಡೋಣ (ಓವರ್ವ್ಯೂ)
 
-### What Is React? {#what-is-react}
+### ರಿಯಾಕ್ಟ್ ಎಂದರೇನು? {#what-is-react}
 
-React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called "components".
+ರಿಯಾಕ್ಟ್ ಒಂದು ಘೋಷಣಾತ್ಮಕ (ಡೆಕ್ಲಾರಟಿವೆ), ಸಮರ್ಥ, and ಹೊಂದಿಕೊಳ್ಳುವ (ಫ್ಲೆಕ್ಸಿಬಲ್) ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಲೈಬ್ರರಿ. ಇದು ಬಳಕೆದಾರ ಅಥವಾ ಉಪಯೋಗಿಸುವವನು (ಯೂಸರ್) ಇಂಟರ್ಫೇಸ್ಗಳನ್ನು (ಯು ಐ ಇಂಟರ್ಫೇಸ್) ತಯಾರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ. 
+<br>
+ಸಂಕೀರ್ಣ ಯುಐಗಳನ್ನು "ಘಟಕಗಳು"(ಕಾಂಪೊನೆಂಟ್ಸ್) ಎಂಬ ಸಣ್ಣ ಮತ್ತು ಪ್ರತ್ಯೇಕವಾದ ತುಣುಕುಗಳಿಂದ ಸಂಯೋಜಿಸಲು ಇದರಿ೦ದ ಸಾಧ್ಯ.
 
-React has a few different kinds of components, but we'll start with `React.Component` subclasses:
+
+ಪ್ರತಿಕ್ರಿಯೆಯು ಕೆಲವು ವಿಭಿನ್ನ ರೀತಿಯ ಅಂಶಗಳನ್ನು ಹೊಂದಿದೆ, ಆದರೆ ನಾವು `ರಿಯಾಕ್ಟ್.ಕಂಪೋನೆಂಟ್` ಉಪವರ್ಗಗಳೊಂದಿಗೆ ಪ್ರಾರಂಭಿಸುತ್ತೇವೆ:
 
 ```javascript
 class ShoppingList extends React.Component {
@@ -149,11 +163,12 @@ class ShoppingList extends React.Component {
 // Example usage: <ShoppingList name="Mark" />
 ```
 
-We'll get to the funny XML-like tags soon. We use components to tell React what we want to see on the screen. When our data changes, React will efficiently update and re-render our components.
+ನಾವು ಶೀಘ್ರದಲ್ಲೇ XML- ನಂತಹ ಟ್ಯಾಗ್ಗಳ ಬಗ್ಗೆ ಮಾತನಾಡುತ್ತೇವೆ. ನಾವು ಕಾಂಪೊನೆಂಟ್ಸ್ ಮೂಲಕ ರಿಯಾಕ್ಟ್ ಗೆ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ಏನು ನೋಡಬೇಕೆಂದು ಹೇಳುತ್ತೆವೆ. ನಮ್ಮ ಡೇಟಾ ಬದಲಾದರೆ, ರಿಯಾಕ್ಟ್, ನಮ್ಮ ಘಟಕಗಳನ್ನು (ಕಾಂಪೊನೆಂಟ್ಸ್) ಪರಿಣಾಮಕಾರಿಯಾಗಿ ನವೀಕರಿಸಿ ಮರು-ನಿರೂಪಿಸುತ್ತದೆ.
 
-Here, ShoppingList is a **React component class**, or **React component type**. A component takes in parameters, called `props` (short for "properties"), and returns a hierarchy of views to display via the `render` method.
+ಇಲ್ಲಿ, ShoppingList ಒಂದು **ರಿಯಾಕ್ಟ್ ಕಂಪೋನೆಂಟ್ ಕ್ಲಾಸ್**, ಅಥವಾ **ರಿಯಾಕ್ಟ್ ಕಂಪೋನೆಂಟ್ ಟೈಪ್**. ಒಂದು ಕಂಪೋನೆಂಟ್ ಹಲವಾರು ನಿಯತಾಂಕಗಳು (ಪಾರಮೇಟರ್ಸ್) ತೆಗೆದುಕೊಳ್ಳುತದೆ. ಇದನ್ನು  `ಪ್ರಾಪ್ಸ್`(`props`) ("ಪ್ರಾಪರ್ಟೀಸ್" ಶಬ್ದದ ಸಣ್ಣ ರೂಪ) ಎಂದು ಕರೆಯಲಾಗುತ್ತದೆ,  ಮತ್ತು `render`(ರಂಡೆರ್) ಮೆಥಡ್ ಮೂಲಕ ಪ್ರದರ್ಶಿಸಲು ವೀಕ್ಷಣೆಗಳ ಕ್ರಮಾನುಗತವನ್ನು ಹಿಂದಿರುಗಿಸುತ್ತದೆ.
 
-The `render` method returns a *description* of what you want to see on the screen. React takes the description and displays the result. In particular, `render` returns a **React element**, which is a lightweight description of what to render. Most React developers use a special syntax called "JSX" which makes these structures easier to write. The `<div />` syntax is transformed at build time to `React.createElement('div')`. The example above is equivalent to:
+
+ರಿಯಾಕ್ಟ್ `render (ರೆಂಡೆರ್)` ಮೆಥಡ್ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ನೀವು ನೋಡಲು ಬಯಸುವ * ವಿವರಣೆಯನ್ನು * ಹಿಂದಿರುಗಿಸುತ್ತದೆ. ರಿಯಾಕ್ಟ್ ವಿವರಣೆಯನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ ಮತ್ತು ಫಲಿತಾಂಶವನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ. ನಿರ್ದಿಷ್ಟವಾಗಿ, `ರೆಂಡರ್` ರಿಟರ್ನ್ಸ್ ** ರಿಯಾಕ್ಟ್ ಎಲಿಮೆಂಟ್ **, ಅದು ಏನು ನಿರೂಪಿಸಲು ಒಂದು ಹಗುರವಾದ ವಿವರಣೆಯಾಗಿದೆ. ಹೆಚ್ಚಿನ ರಿಯಾಕ್ಟ್ ಡೆವೆಲೊಫೇರ್ಸ್ "JSX" ಎಂಬ ವಿಶೇಷ ಸಿಂಟ್ಯಾಕ್ಸ್ ಅನ್ನು ಬಳಸುತ್ತಾರೆ, ಅದು ಈ ರಚನೆಗಳನ್ನು ಬರೆಯಲು ಸುಲಭವಾಗುತ್ತದೆ. `<Div />` ಸಿಂಟ್ಯಾಕ್ಸ್ ಅನ್ನು 'ರಿಯಾಕ್ಟ್.ಕ್ರೀಟ್ ಎಲಿಮೆಂಟ್' ('ಡಿವಿ') `ಗೆ ಬಿಲ್ಡ್ ಸಮಯದಲ್ಲಿ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ. ಮೇಲಿನ ಉದಾಹರಣೆಯು ಇದಕ್ಕೆ ಸಮನಾಗಿರುತ್ತದೆ:
 
 ```javascript
 return React.createElement('div', {className: 'shopping-list'},
@@ -162,11 +177,11 @@ return React.createElement('div', {className: 'shopping-list'},
 );
 ```
 
-[See full expanded version.](babel://tutorial-expanded-version)
+[ಪೂರ್ಣ ವಿಸ್ತರಿತ ಆವೃತ್ತಿಯನ್ನು ನೋಡಿ.](babel://tutorial-expanded-version)
 
-If you're curious, `createElement()` is described in more detail in the [API reference](/docs/react-api.html#createelement), but we won't be using it in this tutorial. Instead, we will keep using JSX.
+ನೀವು ಕುತೂಹಲಕಾರಿಯಾಗಿದ್ದರೆ `createElement()` ಇಲ್ಲಿ, [API reference](/docs/react-api.html#createelement), ಹೆಚ್ಚು ವಿವರವಾಗಿ ವಿವರಿಸಲಾಗಿದೆ. ಆದರೆ ನಾವು ಈ ಟ್ಯುಟೋರಿಯಲ್ನಲ್ಲಿ ಅದನ್ನು ಬಳಸುವುದಿಲ್ಲ. ಬದಲಾಗಿ, ನಾವು JSX ಅನ್ನು ಬಳಸುತ್ತೇವೆ.
 
-JSX comes with the full power of JavaScript. You can put *any* JavaScript expressions within braces inside JSX. Each React element is a JavaScript object that you can store in a variable or pass around in your program.
+JSX ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನ ಪೂರ್ಣ ಶಕ್ತಿಯೊಂದಿಗೆ ಬರುತ್ತದೆ. ನೀವು JSX ಒಳಗೆ ಕಟ್ಟುಪಟ್ಟಿಗಳಲ್ಲಿ ಯಾವುದೇ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಅಭಿವ್ಯಕ್ತಿಗಳನ್ನು ಹಾಕಬಹುದು. ಪ್ರತಿ ಪ್ರತಿಕ್ರಿಯಾ ಅಂಶವು ಒಂದು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ವಸ್ತುವೆಂದರೆ ನೀವು ನಿಮ್ಮ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿ ವೇರಿಯೇಬಲ್ ಅಥವಾ ಪಾಸ್ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಬಹುದು.
 
 The `ShoppingList` component above only renders built-in DOM components like `<div />` and `<li />`. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing `<ShoppingList />`. Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
 
