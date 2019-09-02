@@ -6,7 +6,7 @@ prev: cdn-links.html
 next: introducing-jsx.html
 ---
 
-ಚಿಕ್ಕದಾದ ರಿಯಾಕ್ಟ್ ಉದಾಹರಣೆಗೆ ಇದು ಕಾಣುತ್ತದೆ:
+ಚಿಕ್ಕದಾದ ರಿಯಾಕ್ಟ್ ಉದಾಹರಣೆ ಹೀಗೆ ಕಾಣುತ್ತದೆ:
 
 ```js
 ReactDOM.render(
