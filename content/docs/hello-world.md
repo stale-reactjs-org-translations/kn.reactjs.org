@@ -36,7 +36,15 @@ ReactDOM.render(
 
 ಈ ಅಧ್ಯಾಯದಲ್ಲಿ ಪ್ರತಿ ಅಧ್ಯಾಯವು ಹಿಂದಿನ ಅಧ್ಯಾಯಗಳಲ್ಲಿ ಪರಿಚಯಿಸಲ್ಪಟ್ಟ ಜ್ಞಾನವನ್ನು ನಿರ್ಮಿಸುತ್ತದೆ. **ಸೈಡ್ಬಾರ್ನಲ್ಲಿ ಕಂಡುಬರುವ ಕ್ರಮದಲ್ಲಿ "ಮುಖ್ಯ ಪರಿಕಲ್ಪನೆಗಳು" ಮಾರ್ಗದರ್ಶಿ ಅಧ್ಯಾಯಗಳನ್ನು ಓದುವ ಮೂಲಕ ನೀವು ಹೆಚ್ಚಿನ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಕಲಿಯಬಹುದು.** ಉದಾಹರಣೆಗೆ, ["ಪರಿಚಯಿಸುತ್ತಿದ್ದ JSX"](/docs/introducing-jsx.html) ಇದು ನಂತರದ ಮುಂದಿನ ಅಧ್ಯಾಯವಾಗಿದೆ.
 
+<<<<<<< HEAD
 ## ಜ್ಞಾನ ಮಟ್ಟ ಊಹೆಗಳನ್ನು {#knowledge-level-assumptions}
+=======
+React is a JavaScript library, and so we'll assume you have a basic understanding of the JavaScript language. **If you don't feel very confident, we recommend [going through a JavaScript tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) to check your knowledge level** and enable you to follow along this guide without getting lost. It might take you between 30 minutes and an hour, but as a result you won't have to feel like you're learning both React and JavaScript at the same time.
+
+>Note
+>
+>This guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>>>>>>> f2158e36715acc001c8317e20dc4f45f9e2089f3
 
 ರಿಯಾಕ್ಟ್ ಒಂದು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಲೈಬ್ರರಿ, ಆದ್ದರಿಂದ ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಭಾಷೆಯ ಮೂಲಭೂತ ತಿಳುವಳಿಕೆಯನ್ನು ಹೊಂದಿದ್ದೇವೆ ಎಂದು ನಾವು ಭಾವಿಸುತ್ತೇವೆ. **ನಿಮಗೆ ತುಂಬಾ ವಿಶ್ವಾಸವಿರದಿದ್ದರೆ, ನಿಮ್ಮ ಜ್ಞಾನ ಮಟ್ಟವನ್ನು ಪರಿಶೀಲಿಸಲು [ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಟ್ಯುಟೋರಿಯಲ್](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) ಮೂಲಕ ಹೋಗುವುದನ್ನು ನಾವು ಶಿಫಾರಸು ಮಾಡುತ್ತೇವೆ** ಮತ್ತು ಕಳೆದುಹೋಗದೆ ಈ ಮಾರ್ಗದರ್ಶಿಯನ್ನು ಅನುಸರಿಸಲು ನಿಮಗೆ ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ. ಇದು ನಿಮ್ಮನ್ನು 30 ನಿಮಿಷಗಳು ಮತ್ತು ಒಂದು ಗಂಟೆಯೊಳಗೆ ತೆಗೆದುಕೊಳ್ಳಬಹುದು, ಆದರೆ ಪರಿಣಾಮವಾಗಿ ನೀವು ಒಂದೇ ಸಮಯದಲ್ಲಿ ರಿಯಾಕ್ಟ್ ಮತ್ತು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ಗಳನ್ನು ಕಲಿತಿರುವುದರಿಂದ ನೀವು ಅನುಭವಿಸಬೇಕಾಗಿಲ್ಲ.
 
