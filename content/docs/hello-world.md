@@ -42,7 +42,11 @@ ReactDOM.render(
 
 >ಸೂಚನೆ
 >
+<<<<<<< HEAD
 >ಈ ಮಾರ್ಗದರ್ಶಿ ಕೆಲವೊಮ್ಮೆ ಹೊಸ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಸಿಂಟ್ಯಾಕ್ಸನ್ನು ಉದಾಹರಣೆಗಳಲ್ಲಿ ಬಳಸುತ್ತದೆ. ಕಳೆದ ಕೆಲವು ವರ್ಷಗಳಲ್ಲಿ ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡದಿದ್ದರೆ, [ಈ ಮೂರು ಅಂಕಗಳು](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) ನಿಮಗೆ ಹೆಚ್ಚು ದಾರಿ ಬೇಕು.
+=======
+>This guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>>>>>>> b41b1dc35679c01c3252e7d512ce28c5e100d0a4
 
 ## ನಾವೀಗ ಆರಂಭಿಸೋಣ! {#lets-get-started}
 
