@@ -8,16 +8,14 @@ next: introducing-jsx.html
 
 ಚಿಕ್ಕದಾದ ರಿಯಾಕ್ಟ್ ಉದಾಹರಣೆಗೆ ಇದು ಕಾಣುತ್ತದೆ:
 
-```js
-ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('root')
-);
+```jsx
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<h1>Hello, world!</h1>);
 ```
 
 ಇದು ಪೇಜಿನಲ್ಲಿ  "Hello, world!" ಎಂದು ಹೆಡಿಂಗ್ ತೋರಿಸುತದೆ
 
-[](codepen://hello-world)
+**[Try it on CodePen](https://codepen.io/gaearon/pen/rrpgNB?editors=1010)**
 
 
 ಆನ್ಲೈನ್ ಏಡಿಟೋರನ್ನು ತೆರೆಯಲು ಮೇಲಿನ ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿ. ಕೆಲವು ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಲು ಮುಕ್ತವಾಗಿರಿ, ಮತ್ತು ಅವರು ಔಟ್ಪುಟ್ ಅನ್ನು ಹೇಗೆ ಪ್ರಭಾವಿಸುತ್ತಾರೆ ಎಂಬುದನ್ನು ನೋಡಿ. ಈ ಗೈಡಿನಲ್ಲಿ ಹೆಚ್ಚಿನ ಪುಟಗಳು ಈ ರೀತಿಯ ಸಂಪಾದಿಸಬಹುದಾದ ಉದಾಹರಣೆಗಳನ್ನು ಹೊಂದಿರುತ್ತವೆ.
@@ -42,7 +40,11 @@ ReactDOM.render(
 
 >ಸೂಚನೆ
 >
+<<<<<<< HEAD
 >ಈ ಮಾರ್ಗದರ್ಶಿ ಕೆಲವೊಮ್ಮೆ ಹೊಸ ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ ಸಿಂಟ್ಯಾಕ್ಸನ್ನು ಉದಾಹರಣೆಗಳಲ್ಲಿ ಬಳಸುತ್ತದೆ. ಕಳೆದ ಕೆಲವು ವರ್ಷಗಳಲ್ಲಿ ನೀವು ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್ನೊಂದಿಗೆ ಕೆಲಸ ಮಾಡದಿದ್ದರೆ, [ಈ ಮೂರು ಅಂಕಗಳು](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) ನಿಮಗೆ ಹೆಚ್ಚು ದಾರಿ ಬೇಕು.
+=======
+>This guide occasionally uses some newer JavaScript syntax in the examples. If you haven't worked with JavaScript in the last few years, [these three points](https://gist.github.com/gaearon/683e676101005de0add59e8bb345340c) should get you most of the way.
+>>>>>>> 4b68508440a985598571f78f60637b6dccdd5a1a
 
 ## ನಾವೀಗ ಆರಂಭಿಸೋಣ! {#lets-get-started}
 
